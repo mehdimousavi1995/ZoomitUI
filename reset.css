@@ -1,0 +1,15 @@
+*,div,p,ul {
+	padding : 0;
+	margin : 0;
+}
+html{
+	direction : rtl;
+}
+body{
+	font-family : tahoma ;
+
+}
+
+img{
+	border : 0;
+}

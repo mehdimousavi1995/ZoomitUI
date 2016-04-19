@@ -1,0 +1,42 @@
+body{
+    direction: rtl;
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-family:  Tahoma, Geneva, sans-serif ;
+}
+
+ul.inline {
+      display: inline-block;
+
+}
+ul.inline li{
+      display: inline-block;
+
+}
+.category-icon,
+.category-name{
+    display: block;
+    text-align: center;
+}
+.category-icon {
+    width: 20px;
+    height: 20px;
+    margin : auto;
+
+}
+ul#category {
+    background-color: #333333;
+    list-style-type: none;
+}
+ul#category li{
+    min-width: 50px;
+    margin: 5px auto;
+    cursor: pointer;
+    color: #dedee6;
+}
+ul#category li:hover {
+    color: #fff;
+}
+
+

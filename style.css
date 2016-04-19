@@ -1,0 +1,236 @@
+@charset "uft-8";
+@import url('reset.css');
+
+html {
+    direction : rtl;
+}
+
+body {
+    font-size : 13px;
+}
+#title{
+    height : 120px;
+    background-color : #333333;
+}
+#title img{
+    float : left ;
+    margin : 10px;
+}
+
+#main-menu{
+    list-style : none;
+    border : 1px solid #aaa;
+    border-left : none;
+    float : right ;
+}
+
+#main-menu li {
+    float : right ;
+    border-left : 1px solid #aaa;
+    position : relative ;
+}
+
+#main-menu li a {
+    text-decoration : none;
+    float : right ;
+    padding : 0  15px;
+    line-height :32px;
+}
+
+#main-menu li ul {
+    list-style : none;
+    width : 500px;
+    border : 1px solid #aaa;
+    border-bottom : none;
+    position : absolute;
+    top : 34px;
+    float : right;
+    display : none;
+}
+
+#main-meny ul li img {
+    width : 20px;
+    height : 20px;
+}
+
+#main-menu ul li {
+    float : none;
+    border-left :none;
+    border-bottom : 1px solid #aaa;
+
+}
+#main-menu li:hover ul {
+    display : block;
+}
+#main-menu ul li a {
+    float : none;
+    display : block;
+}
+
+#wrapper{
+    width :1167px;
+    margin :0 auto;
+}
+#header {
+    height :150px;
+    background : #3498d6;
+}
+
+.sidebar {
+    width :390px;
+    background:#eee;
+    height : auto;
+    float :left ;
+}
+
+#main-content{
+    width : 777px;
+    height :auto;
+    background : #ecf0f1;
+    float :left;
+    margin-top : -25px;
+}
+
+#main-content p{
+    padding :15px;
+    line-height :25px;
+    font-family :'Times New Roman',Geneva,sans-serif;
+    font-size : 15px;
+}
+#fullimg{
+    width :730;
+    height : 410;
+    padding :15px;
+}
+
+.image-sidebar{
+    width :340px;
+    height : 390px;
+    float : left ;
+    padding : 15px;
+}
+
+.comment{
+    width : 500px;
+    height : 15px;
+    background : #eee;
+    border : 1px solid black;
+}
+
+
+.sidebar-img{
+    margin : 15px;
+    float : left ;
+}
+
+.last-consdration{
+    width : 300px;
+    height : 40px;
+    background : yellow;
+    display : inline-block;
+    float : left ;
+    margin : 15px;
+}
+.last-consdration p{
+    padding : 10px;
+}
+.gallery{
+    width : 300px;
+}
+.gallery img{
+    margin : 15 px;
+    cursor: pointer;
+    width :300px;
+    height : 90px;
+    display : inline-block;
+}
+.gallery a{
+    margin-right : 74px;
+    direction :ltr;
+}
+
+
+.gallery img:hover {
+    opacity: 0.5;
+}
+
+#sidebar-link {
+    width :250px;
+    height : auto;
+    display : inline-block;
+}
+#sidebar-link img{
+    width : 110px;
+    height : 120px;
+    display : inline-block;
+    float : right ;
+    padding-right : 15px;
+}
+#sidebar-link a{
+    text-decoration : none;
+    float : right ;
+    display : inline;
+    margin-right : 25px;
+    margin-top : 25px;
+    position: relative;
+
+
+
+}
+
+#fucker{
+    width:64px;
+    height : 64px;
+    border-radius:100%;
+    background-color :black;
+    border-left: 2px solid black;
+    border-right: 2px solid red;
+    border-top: 2px solid red;
+    border-bottom: 2px solid red;
+}
+
+#fucker:hover{
+    cursor :pointer;
+}
+
+.fuck1{
+    position : absolute;
+    top:515px;
+    left : 333px;
+}
+.fuck2{
+    position : absolute;
+    top:608px;
+    left : 333px;
+}
+
+.fuck3{
+    position : absolute;
+    top:701px;
+    left : 333px;
+}
+.fuck4{
+    position : absolute;
+    top:794px;
+    left : 333px;
+}
+.fuck5{
+    position : absolute;
+    top:887px;
+    left : 333px;
+}
+
+#fucker p{
+    color : white ;
+    font-size : 20px;
+    padding : 18px;
+}
+.footer{
+    background : black ;
+    color : white ;
+    height : 590px;
+    display :block;
+    margin-bottom :20px;
+    clear : both ;
+
+}

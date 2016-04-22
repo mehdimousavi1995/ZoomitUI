@@ -1,17 +1,23 @@
-@import url('reset.css')
-
-
-html{
-	direction : rtl ;
-}
+ 
 body{
     direction: rtl;
     margin: 0;
     padding: 0;
     border: none;
-    font-family :yekan , Tahoma , Geneva , Verdana , sans-serif;
+    background-color:#d2d2d8;
+    font-family: IRANSans, Tahoma serif;
 }
 
+
+#title-wrapper
+{
+    display : block;
+    position : fixed;  
+    width : -moz-available;
+    top :0;
+    right : 0;
+    z-index : 3; 
+}
 ul.inline {
       display: inline-block;
 
@@ -35,8 +41,7 @@ ul.inline li{
 ul#category {
     background-color: #282829;
     list-style-type: none;
-    display : block ;
-	position : fixed;
+    display : block ;    
     margin:0;
 }
 ul#icon{
@@ -67,6 +72,8 @@ ul#category li:hover {
 }
 
 
+
+
 .dropdown {
     position: relative;
     display: inline-block;
@@ -79,15 +86,14 @@ ul#category li:hover {
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
     float : right;
-    width : 1000px;
+    width : 873px;
 }
 
 .dropdown:hover  .dropdown-content {
     display: block;
 }
 
- .dropdown-content{
-    position : fixed ;
+ .dropdown-content{    
     z-index :1px;
  }
 
@@ -132,7 +138,7 @@ div.img:hover {
     cursor : pointer ;
 }
 div.img:active {
-    z-index: -5px;
+
 }
 
 div.img img {
@@ -153,15 +159,299 @@ div.desc {
 }
 
 #header{
-    height : 100px;
-    background : black;
+    height : 70px;
+    background : black;   
+    overflow:hidden;
+}
+#header div{
+	margin:15px;
+	
+}
+.img-social{
+	width:25px;
+	height:25px;
+	float :right;
+	z-index:10;
+	margin:auto 10px;
 }
 #header img{
     float : left ;
-    width : 270px;
-    height : 85px;
+    width : 200px;
+    height : 70px;
     margin-left : 30px;
 }
+
+#facebook{
+	 background-image: url("images/facebook.png");
+}
+#twitter{ background-image: url("images/twitter.png");}
+#google{ background-image: url("images/google.png");}
+#youtube{background-image: url("images/youtube.png");}
+#facebook:hover{
+	 background-image: url("images/facebook-red.png");
+	 cursor:pointer;
+}
+#twitter:hover{ background-image: url("images/twitter-red.png");
+cursor:pointer;}
+#google:hover{ background-image: url("images/google-red.png");
+cursor:pointer;}
+#youtube:hover{background-image: url("images/youtube-red.png");
+ cursor:pointer;}
+body {
+    font-size: 14px;
+}
+
+
+#wrapper {
+    width: 1167px;
+    margin: 0 auto;
+}
+
+#header-good-dianasor {
+    height: auto; 
+    position: relative;
+    z-index: -1;
+    top:118px;
+}
+
+#header-good-dianasor img#subject {
+    width: 1349px;
+    height : 600px;
+}
+#header-good-dianasor img#author{
+    width : 42px;
+    height : 42px;
+    border-radius : 100%;
+    border : 3px solid white ;
+    position : absolute;
+    top : 200px;
+    right : 620px;
+}
+#header-good-dianasor pre{
+    position : absolute;
+    top:80px;
+    right : 450px;
+    font-size:30px;
+    color :white;
+    font-weight : bold;    
+}
+
+#header-good-dianasor pre#author-name{
+    position : absolute;
+    top:255px;
+    right : 480px;
+    font-size:12px;
+    color :white;
+    font-weight : bold;    
+}
+#author-name strong {
+    font-size : 22px;
+    line-height : 35px;
+}
+.sidebar {
+    width: 390px;
+    background-color: #fff;
+    height: 4417px;
+    float: left;    
+}
+#advertisement{
+    margin-right: 50px;
+    margin-top: 10px;
+    width: 320px;
+}
+
+#main-content {
+    width: 777px;
+    height: auto;
+    background-color: #fff; 
+    margin-top: 120px;
+    overflow : hidden ;
+}
+#main-content p {
+    font-size: 15px;
+    line-height: 30px;
+    padding: 30px;
+    text-align: justify;     
+}
+#main-content img{
+    padding-right:15px;
+}
+#p-image-half{width:100%;}
+#p-image-half div {    
+    float:right;
+    width:50%;
+}
+#p-image-half div img{
+    margin-top:30px;
+    margin-bottom:70px;
+}
+.full-images{
+    width:740px;
+    height:430px;
+    padding:20px;
+}
+.sidebar img{    
+    right : 60px;
+    top : 15px;
+}
+#sidebar-link{
+    height: auto;
+    position:relative;
+    right: 50px;
+    width: 324px;
+    
+}
+#sidebar-link div{
+    margin-bottom:2px;   
+}
+.adver{
+    position:relative;
+}
+.adver #sidebar-link-img {
+    background-image: url("images/leftside-ads.jpg");
+    height: 99px;
+    width: 321px;
+    position:unset;
+}
+
+.adver #sidebar-link-img:hover {
+   background-image: url('images/leftside-ads-hover.jpg');
+   cursor:pointer;
+}
+#sidebar-link2 img{  
+    display: inline-block; 
+    position: relative;
+    right: 25px;
+    top: 0;
+}
+#sidebar-link2-img {
+    background-image: url("images/Emilla.jpg");
+    height: 125px;
+    width: 326px;  
+    margin-right: 30px; 
+
+}
+
+#sidebar-link2-img:hover {
+   background-image: url('images/Emilla-hover.jpg');
+   cursor:pointer;
+   
+}
+#sidebar-link div h3{
+    color:white;
+    position:relative;
+}
+#sidebar-link2{
+    width : 324px;
+    height : auto ;
+    margin-top : 150px;
+}
+
+
+
+#reaction{
+    width:777px;
+    height:auto;
+    background-color:#fff;
+}
+#reaction:hover{cursor:pointer;}
+
+#footer{
+    width:100%;
+    height:625px;
+    background-color:#000000;
+    position:relative;
+    top:20px;
+}
+#footer-wrapper{
+    width:80%;
+    height:100%;
+    margin:0 auto;
+}
+#footer img{
+    width:100%;
+    height:75px;
+}
+.footer-right{
+    float :right ;
+    width:25%;
+    height:100%;
+}
+.footer-right{
+    color:white;
+}
+.footer-right-center {
+    height: 80%;
+    width: 100%;
+    margin-right:15px;
+}
+.footer-right-center div {
+    float:right;
+    clear:left;
+    margin-bottom:15px;
+}
+.footer-right-center div a{
+       text-decoration:none;
+       width:250px;
+       display:inline-block;              
+       font-size:13px;
+       color:#aaa;
+       margin-right:15px;
+}
+.footer-right-center div a:hover{
+    color:#fc2654;
+}
+.footer-right  h4{
+    position:relative;
+}
+#footer-right-center-leftside
+{
+    margin-right:15px;
+}
+#footer-right-center-leftside div {
+    float: right;
+    margin-bottom:8px;
+}
+#counter{   
+    font-size:30px;
+    width:12%;
+    height:100%;
+}
+#content{
+    
+    width:88%;
+    height:100%;
+}
+#footer-right-center-leftside div:hover{
+     color:#fc2654;
+     cursor:pointer;
+}
+.circule-progress-bar {
+background-color: black;
+    border-color: red red red black;
+    border-radius: 100%;
+    border-style: solid;
+    border-width: 2px;
+    height: 42px;
+    left: 10px;
+    position: absolute;
+    top: 48px;
+    width: 42px;
+   
+}
+.circule-progress-bar p{
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    right: 12px;
+    top: -3px;
+}
+
+
+
 
 
 
